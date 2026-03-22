@@ -1,0 +1,97 @@
+.rsvp-section {
+  background: linear-gradient(160deg, #1a100a 0%, #2e1e14 100%);
+  padding: 100px 24px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.rsvp-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 70% 50% at 50% 50%, rgba(201,168,76,.07) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.rsvp-label {
+  position: relative;
+}
+
+.rsvp-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(36px, 6vw, 56px);
+  font-weight: 300;
+  color: #f9f0e0;
+  margin-bottom: 16px;
+  font-style: italic;
+  position: relative;
+}
+
+.rsvp-lead {
+  font-size: 14px;
+  color: rgba(249,240,224,.55);
+  margin-bottom: 56px;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.rsvp-form {
+  max-width: 480px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.field-group { text-align: left; }
+
+.field-group label {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.field-group input,
+.field-group select {
+  width: 100%;
+  padding: 14px 18px;
+  background: rgba(249,240,224,.05);
+  border: 1px solid rgba(201,168,76,.2);
+  border-radius: 6px;
+  color: #f9f0e0;
+  font-family: 'Jost', sans-serif;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.25s ease;
+  appearance: none;
+}
+.field-group input:focus,
+.field-group select:focus {
+  border-color: rgba(201,168,76,.6);
+}
+.field-group input::placeholder { color: rgba(249,240,224,.3); }
+.field-group select option { background: #2e1e14; }
+
+.btn-confirm {
+  margin-top: 8px;
+  padding: 18px 40px;
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-family: 'Jost', sans-serif;
+  font-size: 12px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 500;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  box-shadow: 0 8px 24px rgba(155,122,47,.3);
+}
+.btn-confirm:hover { opacity: 0.9; transform: translateY(-2px); }
+.btn-confirm:active { transform: translateY(0); }

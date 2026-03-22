@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap');
+
+:root {
+  --gold: #C9A84C;
+  --gold-light: #E8D5A3;
+  --gold-dark: #9B7A2F;
+  --rose: #d4cfa0;
+  --rose-light: #e6f5e9;
+  --cream: #d7ebd5;
+  --beige: #EDE3D5;
+  --dark: #1f4d2b;
+  --text: #0c1f13;
+  --muted: #8B7355;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: var(--cream);
+  font-family: 'Jost', sans-serif;
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+.main-content {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+  pointer-events: none;
+}
+.main-content.visible {
+  opacity: 1;
+  transform: none;
+  pointer-events: all;
+}
+
+.section-label {
+  font-size: 10px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 20px;
+  display: block;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: none;
+}
+
+.ornament-divider {
+  text-align: center;
+  padding: 40px 0;
+  color: var(--gold);
+  font-size: 18px;
+  opacity: 0.5;
+  letter-spacing: 8px;
+  background: var(--cream);
+}

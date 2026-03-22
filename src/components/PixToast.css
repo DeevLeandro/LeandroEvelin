@@ -1,0 +1,51 @@
+.pix-toast {
+  position: fixed;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%) translateY(160px);
+  background: var(--dark);
+  color: var(--gold-light);
+  padding: 18px 28px;
+  border-radius: 2px;
+  z-index: 9999;
+  font-size: 13px;
+  max-width: min(480px, 90vw);
+  width: 100%;
+  text-align: center;
+  border: 1px solid rgba(201,168,76,.3);
+  transition: transform 0.4s cubic-bezier(.4,0,.2,1);
+  box-shadow: 0 8px 40px rgba(0,0,0,.4);
+  pointer-events: none;
+}
+
+.pix-toast.show {
+  transform: translateX(-50%) translateY(0);
+  pointer-events: all;
+}
+
+.pix-toast strong {
+  color: var(--gold);
+  display: block;
+  margin-bottom: 10px;
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.pix-code {
+  font-family: monospace;
+  font-size: 11px;
+  word-break: break-all;
+  background: rgba(201,168,76,.08);
+  border: 1px solid rgba(201,168,76,.15);
+  padding: 10px 14px;
+  border-radius: 2px;
+  color: var(--gold-light);
+  margin-bottom: 8px;
+}
+
+.pix-hint {
+  font-size: 11px;
+  color: rgba(249,240,224,.35);
+  letter-spacing: 1px;
+}

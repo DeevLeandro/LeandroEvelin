@@ -1,0 +1,128 @@
+.gifts-section {
+  background: var(--cream);
+  padding: 100px 24px;
+}
+
+.gifts-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.section-header h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(36px, 6vw, 56px);
+  font-weight: 300;
+  color: var(--dark);
+  margin-bottom: 16px;
+  font-style: italic;
+}
+
+.section-header p {
+  font-size: 14px;
+  color: var(--muted);
+  max-width: 480px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.gifts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.gift-card {
+  background: #fff;
+  border: 1px solid var(--beige);
+  border-radius: 6px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+.gift-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 50px rgba(42,31,26,.1);
+}
+
+.gift-card-img {
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--beige) 0%, var(--rose-light) 100%);
+  position: relative;
+}
+
+.gift-emoji { font-size: 52px; }
+
+.gift-tag {
+  position: absolute;
+  top: 12px; right: 12px;
+  background: var(--gold);
+  color: #fff;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.gift-body { padding: 20px 20px 24px; }
+
+.gift-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+  margin-bottom: 6px;
+}
+
+.gift-desc {
+  font-size: 15px;
+  color: rgb(78, 78, 78);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.gift-price {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 16px;
+}
+.gift-price small {
+  font-size: 15px;
+  font-weight: 300;
+  color: black;
+}
+
+.btn-gift {
+  width: 100%;
+  padding: 12px;
+  background: transparent;
+  border: 1.5px solid var(--gold);
+  color: var(--gold-dark);
+  font-family: 'Jost', sans-serif;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.25s ease, color 0.25s ease;
+  font-weight: 500;
+}
+.btn-gift:hover {
+  background: var(--gold);
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .gifts-grid { grid-template-columns: 1fr; }
+}

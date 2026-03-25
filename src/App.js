@@ -14,9 +14,16 @@ function App() {
   const [toast, setToast] = useState({ show: false, code: '' });
 
   const handlePix = (code) => {
+    // Copiar para área de transferência
     navigator.clipboard.writeText(code).catch(() => {});
+    
+    // Mostrar toast com o código
     setToast({ show: true, code });
-    setTimeout(() => setToast({ show: false, code: '' }), 4000);
+    
+    // Esconder toast após 5 segundos
+    setTimeout(() => {
+      setToast({ show: false, code: '' });
+    }, 5000);
   };
 
   return (

@@ -411,7 +411,7 @@ export const GIFTS = [
     tag: 'Esporte',
   },
   {
-    emoji: '🪴',
+    emoji: '🌱',
     nome: 'Oficina de Jardinagem',
     desc: 'Aprenda a cuidar das plantas e decorar o lar com verde.',
     valor: 150,

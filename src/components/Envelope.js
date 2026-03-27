@@ -121,7 +121,7 @@ export default function Envelope({ opened, onOpen }) {
             animate={{ opacity: [0.4, 1, 0.4] }}
             transition={{ duration: 2, repeat: Infinity }}
           >
-            ✦ Clique para abrir ✦
+           ✦ Aumente o volume & Clique para abrir ✦
           </motion.p>
 
         </motion.div>

@@ -56,9 +56,15 @@ export default function PixToast({ show, pixData, onCopy, onClose }) {
         <div className="instruction-step">5. Confirme o valor e finalize</div>
       </div>
       
-      <button className="pix-copy-button" onClick={onCopy}>
-        📋 COPIAR CÓDIGO PIX
-      </button>
+     <button
+  className="pix-copy-button"
+  onClick={() => {
+    onCopy();
+    alert('✅ Pix copiado!');
+  }}
+>
+  📋 COPIAR CÓDIGO PIX
+</button>
       
       <span className="pix-hint">✅ Após copiar, o código será automaticamente colado no seu banco</span>
     </div>
